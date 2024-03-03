@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Plantex Website</title>
    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
    <!-- header section -->
@@ -24,21 +26,20 @@
    </div>
    <nav>
       <ul class="navbar">
-         <li><a href="#">Home</a></li>
-         <li><a href="#">Pages</a></li>
-         <li><a href="#">Shop</a></li>
-         <li><a href="#">Portfolio</a></li>
-         <li><a href="#">News</a></li>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Products</a></li>
+         <li><a href="#">FAQs</a></li>
          <li><a href="#">Contact</a></li>
       </ul>
    </nav>
 
-      <div class="h-icons">
+      <!-- <div class="h-icons">
          <a href="#"><i class='bx bx-shopping-bag'></i></a>
          <a href="#"><i class='bx bx-phone'></i></a>
          <a href="#"><i class='bx bx-heart'></i></a>
          <div class="bx bx-menu" id="menu-icon"></div>
-      </div>
+      </div> -->
    </header>
 
    <!-- home section -->
@@ -66,24 +67,54 @@
          </div>
       </div>
    </section>
-   
-   <!-- banner section -->
-   <section class="banner">
-      <div class="banner-img">
-         <img src="banner1.jpg" alt="">
+
+   <!-- about section -->
+
+   <section class="about section container" id="about">
+      <div class="about__container grid">
+          <img src="about.png" alt="" class="about__img">
+
+          <div class="about__data">
+              <h2 class="section__title about__title">
+                  Who we really are & <br> why choose us
+              </h2>
+
+              <p class="about__description">
+                  We have over 4000+ unbiased reviews and our customers 
+                  trust our plant process and delivery service every time
+              </p>
+
+              <div class="about__details">
+                  <p class="about__details-description">
+                      <i class="ri-checkbox-fill about__details-icon"></i>
+                      We always deliver on time.
+                  </p>
+                  <p class="about__details-description">
+                      <i class="ri-checkbox-fill about__details-icon"></i>
+                      We give you guides to protect and care for your plants.
+                  </p>
+                  <p class="about__details-description">
+                      <i class="ri-checkbox-fill about__details-icon"></i>
+                      We always come over for a check-up after sale.
+                  </p>
+                  <p class="about__details-description">
+                      <i class="ri-checkbox-fill about__details-icon"></i>
+                      100% money back guaranteed.
+                  </p>
+              </div>
+
+              <a href="#" class="button--link button--flex">
+                  Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+              </a>
+          </div>
       </div>
-      <div class="banner-img">
-         <img src="banner3.jpg" alt="">
-      </div>
-      <div class="banner-img">
-         <img src="banner2.jpg" alt="">
-      </div>
-   </section>
+  </section>
+
 
    <!-- new product section -->
    <section class="new product">
       <div class="center-text">
-         <h2>new arrival items</h2>
+         <h2>Our Shop Products</h2>
       </div>
 
       <div class="new-content">
@@ -185,80 +216,41 @@
       </div>
    </section>
 
-  <!-- l banner section -->
-
-   <section class="banner">
-      <div class="banner-img">
-         <img src="lbanner1.jpg" alt="">
+ 
+   <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3 class="question">How often should I water my plants?</h3>
+        <p class="answer">Watering frequency depends on the type of plant and its specific needs. It's important to check the soil moisture before watering and to adjust based on factors such as season and environmental conditions.</p>
       </div>
-      <div class="banner-img">
-         <img src="lbanner2.jpg" alt="">
+      <div class="faq-item">
+        <h3 class="question">What kind of lighting conditions do these plants require?</h3>
+        <p class="answer">Plants have varying light requirements, ranging from full sun to low light. Each plant listing on our website includes information about its preferred lighting conditions to help you find the perfect match for your home.</p>
       </div>
-     
-   </section>
-
-   <!-- famous products -->
-
-   <section class="new product">
-      <div class="center-text">
-         <h2>Top Products</h2>
+      <div class="faq-item">
+        <h3 class="question">Do you provide care instructions for your plants?</h3>
+        <p class="answer">Yes, we include care instructions with every plant purchase. These instructions cover topics such as watering, sunlight exposure, temperature, and fertilizing, ensuring that you have all the information needed to care for your new plant.</p>
       </div>
-
-      <div class="new-content">
-         <div class="row">
-            <img src="product1.png" alt="">
-            <h4>Cactus</h4>
-            <h5>$18.00</h5>
-            <div class="top">
-               <p>hot</p>
-            </div>
-            <div class="bbtn">
-               <a href="#">Add to cart</a>
-            </div>
-         </div>
-
-         <div class="row">
-            <img src="product2.png" alt="">
-            <h4>Cactus</h4>
-            <h5>$18.00</h5>
-            <div class="top">
-               <p>hot</p>
-            </div>
-            <div class="bbtn">
-               <a href="#">Add to cart</a>
-            </div>
-         </div>
-
-         <div class="row">
-            <img src="product3.png" alt="">
-            <h4>Cactus</h4>
-            <h5>$18.00</h5>
-            <div class="top">
-               <p>hot</p>
-            </div>
-            <div class="bbtn">
-               <a href="#">Add to cart</a>
-            </div>
-         </div>
-
-         <div class="row">
-            <img src="product4.png" alt="">
-            <h4>Cactus</h4>
-            <h5>$18.00</h5>
-            <div class="top">
-               <p>hot</p>
-            </div>
-            <div class="bbtn">
-               <a href="#">Add to cart</a>
-            </div>
-         </div>
+      <div class="faq-item">
+        <h3 class="question">What is your plant return policy?</h3>
+        <p class="answer">Our plant return policy allows for returns within 30 days of purchase, provided the plant is in its original condition. Please contact our customer service team to initiate the return process, and we'll be happy to assist you.</p>
       </div>
-   </section>
+      <div class="faq-item">
+        <h3 class="question">How are your plants shipped?</h3>
+        <p class="answer">We take great care in packaging and shipping our plants to ensure they arrive safely and in good condition. Plants are securely packaged to prevent damage during transit, and we offer expedited shipping options for faster delivery.</p>
+      </div>
+    </section>
+
+    
+    
 
 
 
 
+
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script src="index.js"></script>
+   
    
 </body>
 </html>
